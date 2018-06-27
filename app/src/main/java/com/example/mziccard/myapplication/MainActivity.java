@@ -29,15 +29,37 @@ public class MainActivity extends AppCompatActivity {
                         .setApiKey(API_KEY)
                         .build();
                 Translate translate = options.getService();
+//                final Translation translation =
+//                        translate.translate("Hey #vapers \uD83C\uDF2C️❄️\n" +
+//                                        "▶️ do u love the #heisenberg #eliquid to? \n" +
+//                                        "#VaffleFam #eliquidporn #VampireVape",
+//                                Translate.TranslateOption.targetLanguage("pl"));
+
                 final Translation translation =
-                        translate.translate("The world is the great gymnasium where we come to make ourselves strong.\n" +
-                                        "You cannot believe in God until you believe in yourself.\n" +
-                                        "All the powers in the universe are already ours. It is we who have put our hands before our eyes and cry that it is dark.\n" +
-                                        "Condemn none: if you can stretch out a helping hand, do so. If you cannot, fold your hands, bless your brothers, and let them go their own way.\n" +
-                                        "Arise,awake and donot stop until the goal is reached.\n" +
-                                        "When an idea exclusively occupies the mind, it is transformed into an actual physical or mental state.\n" +
-                                        "Truth can be stated in a thousand different ways, yet each one can be true.",
-                                Translate.TranslateOption.targetLanguage("te"));
+                        translate.translate("hello",
+                                Translate.TranslateOption.targetLanguage("el"));
+                //zh-CN 简体汉语
+                //zh_TW 中文 (中国)
+
+                //en 英文 2
+//                ru 俄语 2
+//                in 印尼 2
+//                pl 波兰 2
+//                pt 葡萄牙 2
+//                ja 日本   2
+//                el 希腊   2
+//                tr 土耳其 2
+//                es 西班牙 2
+//                fr 法语   2
+//                it 意大利 2
+//                ko 韩国 2
+//                de 德语  2
+
+
+
+
+
+
                 textViewHandler.post(new Runnable() {
                     @Override
                     public void run() {
